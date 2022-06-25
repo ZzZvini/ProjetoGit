@@ -1,0 +1,90 @@
+﻿<!doctype html> <!-- salvar como meusite1.html -->
+
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>CSS - Menus</title>
+
+
+		<style>
+			body { 
+			background-image:("apple.jpg");
+			background-size:cover;
+							font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+						    font-size:24px;
+			}
+	        #principal { 
+			border:2px solid white;
+			width:800px;
+				background-color:rgba(0,0,0,0.5);
+				margin:auto;
+				padding:10px;
+			}
+            #menu {
+				/*border:1px solid red;*/
+				list-style:none;
+				padding-left:0px;
+				margin:0px;
+				text-align:center;
+
+			}
+			 #menu li {
+				/*border:1px solid green;*/
+				width:150px;
+				height:40px;
+				display:inline-block;
+				margin-right:10px;
+
+			}
+			 #menu a { 
+				border:2px groove navy;
+				text-align:center;
+				padding-top:5px;
+			}
+			/* Momentos (pseudo-classes) que uma opção de menu (link) tem*/
+			 #menu a:link 		{ text-decoration:none; 
+			background-color:rgb(91,155,213); 
+				color:white;
+				width:150px;
+				height:35px;
+				display:inline-block;
+			}
+
+			 #menu a:visited 	{ color:red;}
+			 #menu a:hover		{ color:black ; background-color:orange;}
+			 #menu a:active	{ color:yellow; background-color:black;}
+		</style>
+
+	</head>
+
+
+
+	<body>
+	   <div id="principal">
+	       <ul id="menu">
+				<li> <a href="empresa.html"> A Empresa </a> </li>
+				<li> <a href="Produtos.html"> Produtos </a> </li>
+				<li> <a href="Serviços.html"> Serviços </a> </li>
+				<li> <a href="contato.html"> Fale Conosco </a> </li>
+			</ul>
+
+		</div>
+
+		
+
+		<div id="conteudo">
+
+			<h2>Tipos de Pets</h2>
+			<ul>
+				<li>Cachorros</li>
+				<li><a <a href="blog.cobasi.com.br/cuidados-com-gatos-10-dicas-de-saude"> Gatos </a> </li>
+				<li>Pássaros</li>
+				<li>Outros</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
