@@ -1,0 +1,114 @@
+body{
+    background-image: url(apple.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Opens Sans' sans-serif;
+}
+
+:root {
+    --cor-fundo: rgb(36, 18, 18);
+    --cor-hover: rgb(24, 139, 233);
+    --cor-primaria: beige;
+}
+
+.dp-menu{
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul {
+    max-width: 800px;
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    transition: background .4s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+.dp-menu ul li:last-child a {
+    float: right;
+}
+
+/* sub menu */
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    transition: all .4s;
+}
+
+.dp-menu ul li:hover ul {
+    display:block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+.dp-menu ul ul li:last-child a {
+    float:none ; 
+    transition: all .4s;
+}
+
+/*produtos*/
+.a {
+    color: aliceblue; 
+    padding: 1% 50%;
+    background-color: rgb(39, 25, 25);
+    cursor: default;
+}
+
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.iphone {
+    margin-bottom: 20px;
+}
+
+.produtos p{
+    color: aliceblue;
+     text-decoration: none;
+     display: block;
+     padding: 3px 3px;
+     transition: background .4s;
+     background-color: rgb(36, 18, 18);
+     cursor: pointer;
+ }
+
+.produtos p:hover {
+    background-color: rgb(24, 139, 233);
+}
+
